@@ -1,4 +1,6 @@
-const SvgNext = (props) => (
+import { ElementProps } from "@/types/common";
+
+const SvgNext = (props: ElementProps) => (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
