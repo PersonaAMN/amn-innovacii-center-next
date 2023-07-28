@@ -7,7 +7,7 @@ export interface ExpertProps {
     name: string,
     degree?: string,
     speciality: string,
-    experience: string,
+    experience?: string,
     description?: string,
     order: boolean,
 }
