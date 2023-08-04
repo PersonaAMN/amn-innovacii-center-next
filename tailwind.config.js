@@ -10,7 +10,10 @@ module.exports = {
       colors: {
         "day-00": "#FFFFFF",
         "day-50": "rgba(48, 42, 42, 0.05)",
-        "day-1000": "#302A2A"
+        "day-1000": "#302A2A",
+        base: {
+          100: "var(--100)"
+        }
       },
       screens: {
         'sm': '640px',

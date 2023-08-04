@@ -7,3 +7,11 @@
         background-color: #FFFFFF;
     }
 }
+
+.light {
+    --base-100: black;
+}
+
+.dark {
+    --base-100: white;
+}
