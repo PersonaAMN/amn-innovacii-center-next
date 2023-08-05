@@ -25,6 +25,7 @@ module.exports = {
         menu: "0px 159px 95px rgba(13,12,34,0.01), 0px 71px 71px rgba(13,12,34,0.02), 0px 18px 39px rgba(13,12,34,0.02), 0px 0px 0px rgba(13,12,34,0.02)",
       },
       screens: {
+        xs: "400px",
         sm: "640px",
         // => @media (min-width: 640px) { ... }
 
@@ -42,17 +43,6 @@ module.exports = {
       },
       maxWidth: {
         "10xl": "1680px",
-      },
-      spacing: {
-        1: "2px",
-        2: "4px",
-        3: "6px",
-        6: "12px",
-        12: "24px",
-        16: "32px",
-        18: "36px",
-        20: "40px",
-        50: "100px",
       },
     },
   },

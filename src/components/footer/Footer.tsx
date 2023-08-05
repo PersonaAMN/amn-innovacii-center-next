@@ -1,7 +1,9 @@
+"use client";
+
 import { useTheme } from "next-themes";
 import Head from "next/head";
 
-const Index = () => {
+const Footer = () => {
   const { theme, setTheme } = useTheme();
   return (
     <footer className="flex items-center justify-center dark:bg-black w-screen h-screen">
@@ -24,4 +26,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Footer;
