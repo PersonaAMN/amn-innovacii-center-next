@@ -1,4 +1,4 @@
-import { ElementProps } from "@/types/common";
+import { ElementProps } from "@/types/common.types";
 
 const SvgLogo = (props: ElementProps) => (
   <svg
@@ -2895,4 +2895,3 @@ const SvgLogo = (props: ElementProps) => (
   </svg>
 );
 export default SvgLogo;
-
