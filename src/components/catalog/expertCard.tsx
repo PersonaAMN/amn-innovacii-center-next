@@ -7,11 +7,11 @@ const Card = (props: ExpertProps) => {
     <>
       <figure className="text-[30px] leading-[40px] text-day-1000 flex flex-col lg:flex-row justify-between items-center pb-6">
         <Image
-          src={props.image ? props.image : ""}
+          src={props.image || "/doctor.svg"}
           alt={props.name}
           width={300}
           height={300}
-          className={props.order ? "lg:order-last" : undefined}
+          className={`lg:order-${props.order}`}
         />
         <div className="flex flex-col">
           <figcaption>{props.name}</figcaption>
@@ -40,7 +40,7 @@ const CardsList = () => {
       </div>
       <div className="px-16">
         {experts.map((expert, index) => {
-          return <Card key={index} {...expert} order={index % 2 !== 0} />;
+          return <Card key={index} {...expert} order={index % 2} />;
         })}
       </div>
     </article>

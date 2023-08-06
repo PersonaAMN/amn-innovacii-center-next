@@ -1,27 +1,23 @@
-"use client";
-
-import { useTheme } from "next-themes";
-import Head from "next/head";
+import Image from "next/image";
+import Link from "next/link";
 
 const Footer = () => {
-  const { theme, setTheme } = useTheme();
   return (
-    <footer className="flex items-center justify-center dark:bg-black w-screen h-screen">
-      <Head>
-        <title>Current theme^ {theme}</title>
-      </Head>
-      <button
-        onClick={() => setTheme("light")}
-        className="border p-3 mr-5 border-base-100 text-base-100"
-      >
-        Light
-      </button>
-      <button
-        className="border p-3 border-black dark:border-white text-black dark:text-white"
-        onClick={() => setTheme("dark")}
-      >
-        Dark
-      </button>
+    <footer className="flex flex-col items-center justify-center w-screen lg:flex-row gap-5">
+      <Link href="/">
+        <Image src="/logo.jpeg" alt="Учебный центр" width={162} height={162} />
+      </Link>
+      <div>
+        <p>г. Екатеринбург</p>
+        <p>Телефон: +7 343 271 52 20</p>
+        <p>Email: amn_persona@mail.ru</p>
+        <p>ООО «АМН-Инновации»</p>
+        <p>620014 г.Екатеринбург, </p>
+        <p>пр-кт Ленина, д.22-а</p>
+      </div>
+      <Link href="https://t.me/medestetprofi">
+        <Image src="/telegram.svg" alt="Учебный центр" width={32} height={32} />
+      </Link>
     </footer>
   );
 };

@@ -73,5 +73,5 @@ export interface ExpertProps {
     speciality: string,
     experience?: string,
     description?: string,
-    order: boolean,
+    order: number,
 }

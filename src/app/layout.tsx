@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={ibmFont.className}>
-        <Navbar title="test" />
+        <Navbar />
         <main>{children}</main>
         <Footer />
       </body>

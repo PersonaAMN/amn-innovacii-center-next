@@ -1,42 +1,26 @@
-"use client";
-
 import { NavLinks } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
-import { ButtonHTMLAttributes } from "react";
 
-interface Props {
-  title: string;
-}
-
-export const Navbar = (props: Props) => {
-  const CustomButton = (props: ButtonHTMLAttributes<HTMLButtonElement>) => {
-    return (
-      <button disabled={props.disabled} {...props}>
-        {props.children}
-      </button>
-    );
-  };
-
-  const handleButtonClick = () => {
-    return typeof window === "undefined" ? undefined : console.log("hello");
-  };
-
+export const Navbar = () => {
   return (
-    <nav className="flex justify-between text-[36px] leading-[40px] items-center h-[148px] lg:h-[162px] px-16 py-5 border-b border-nav-border gap-4">
-      <ul className="flex items-center gap-10">
-        <li className="order-2">
-          <Link href="/">
+    <nav className="flex justify-center text-[36px] leading-[40px] items-center px-16 py-5 border-b border-nav-border">
+      <ul className="flex flex-col lg:flex-row grow items-center justify-center gap-5">
+        <li className="flex lg:order-1 flex-1 items-center justify-center">
+          <Link href="/" className="items-center">
             <Image
               src="/logo.jpeg"
               alt="Учебный центр"
-              width={162}
-              height={162}
+              width={102}
+              height={102}
             />
           </Link>
         </li>
         {NavLinks.map((link, index) => (
-          <li key={link.key} className={`order-${index}`}>
+          <li
+            key={link.key}
+            className={`flex items-center justify-center min-w-[18%] order-${index}`}
+          >
             <Link href={link.href}>{link.text}</Link>
           </li>
         ))}

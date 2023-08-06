@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 import { memo } from "react";
 import { experts } from "@/components/catalog/expertsInfo";
