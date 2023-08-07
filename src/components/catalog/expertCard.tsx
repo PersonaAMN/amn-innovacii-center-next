@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { ExpertProps } from "@/types/common.types";
-import { experts } from "./expertsInfo";
+import { experts } from "@/constants";
 
 const Card = (props: ExpertProps) => {
   return (

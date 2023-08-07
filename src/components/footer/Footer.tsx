@@ -9,10 +9,6 @@ const Footer = () => {
       </Link>
       <div>
         <p>г. Екатеринбург</p>
-        <p>Телефон: +7 343 271 52 20</p>
-        <p>Email: amn_persona@mail.ru</p>
-        <p>ООО «АМН-Инновации»</p>
-        <p>620014 г.Екатеринбург, </p>
         <p>пр-кт Ленина, д.22-а</p>
       </div>
       <Link href="https://t.me/medestetprofi">
