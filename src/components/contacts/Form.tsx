@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import FormField from "./FormField";
+import CustomButton from "../CustomButton";
 
 const FeedbackForm = () => {
   const [form, setForm] = useState({
@@ -27,6 +28,7 @@ const FeedbackForm = () => {
         state={form.email}
         setState={(value) => handleStateChange("email", value)}
       />
+      <CustomButton title="send" type="submit" isSubmitting={true} />
     </form>
   );
 };

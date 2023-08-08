@@ -1,13 +1,14 @@
 import { User, Session } from 'next-auth'
+import { MouseEventHandler } from 'react';
 
-export type FormState = {
-    title: string;
-    description: string;
-    image: string;
-    liveSiteUrl: string;
-    githubUrl: string;
-    category: string;
-};
+export type ButtonProps = {
+  title: string;
+  handleClick?: MouseEventHandler;
+  isSubmitting?: boolean;
+  type?: 'button' | 'submit';
+  bgColor?: string;
+  textColor?: string;
+}
 
 export interface ProjectInterface {
     title: string;
