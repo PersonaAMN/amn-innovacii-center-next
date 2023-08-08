@@ -1,27 +1,34 @@
 "use client";
 
 import { useState } from "react";
+import FormField from "./FormField";
 
-const Form = () => {
-  const [value, setValue] = useState("");
-
+const FeedbackForm = () => {
+  const [form, setForm] = useState({
+    fullName: "",
+    email: "",
+  });
   const handleFormSubmit = (e: React.FormEvent) => {};
-  const image = null;
+  const handleStateChange = (fieldName: string, value: string) => {
+    setForm((prevState) => ({ ...prevState, [fieldName]: value }));
+  };
+
   return (
     <form onSubmit={handleFormSubmit} className="flexStart form">
-      <div className="flexStart flex-col w-full gap-4">
-        <label className="w-full text-gray-100">Введите ваши данные</label>
-        <input
-          type="text"
-          placeholder="ФИО"
-          value={value}
-          required
-          className="form_field-input"
-          onChange={(e) => setValue(e.target.value)}
-        />
-      </div>
+      <FormField
+        title="Как к вам обращаться?"
+        placeholder="ФИО"
+        state={form.fullName}
+        setState={(value) => handleStateChange("fullName", value)}
+      />
+      <FormField
+        title="Введите адрес электронной почты"
+        placeholder="email@gmail.com"
+        state={form.email}
+        setState={(value) => handleStateChange("email", value)}
+      />
     </form>
   );
 };
 
-export default Form;
+export default FeedbackForm;

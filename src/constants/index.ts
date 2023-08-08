@@ -1,8 +1,8 @@
 export const NavLinks = [
-    {href: '/', key: 'about', text: 'О нас'},
-    {href: '/', key: 'teachers', text: 'Преподаватели'},
-    {href: '/programms', key: 'programms', text: 'Программы'},
-    {href: '/contacts', key: 'contacts', text: 'Контакты'},
+    {href: '/', key: 'about', text: 'О нас', order: 1},
+    {href: '/', key: 'teachers', text: 'Преподаватели', order: 2},
+    {href: '/programms', key: 'programms', text: 'Программы', order: 4},
+    {href: '/contacts', key: 'contacts', text: 'Контакты', order: 5},
 ];
 
 export const experts = [

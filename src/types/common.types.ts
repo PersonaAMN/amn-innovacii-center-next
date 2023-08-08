@@ -53,13 +53,11 @@ export interface SessionInterface extends Session {
   };
 }
 
-export interface ProjectForm {
+export interface Form {
   title: string;
-  description: string;
-  image: string;
-  liveSiteUrl: string;
-  githubUrl: string;
-  category: string;
+  placeholder: string,
+  state: string,
+  setState: (value : string) => void,
 }
 
 export interface ElementProps {

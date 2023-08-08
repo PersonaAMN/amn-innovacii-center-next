@@ -4,10 +4,18 @@ import Link from "next/link";
 
 export const Navbar = () => {
   return (
-    <nav className="flex justify-center text-[36px] leading-[40px] items-center px-16 py-5 border-b border-nav-border">
-      <ul className="flex flex-col lg:flex-row grow items-center justify-center gap-5">
-        <li className="flex lg:order-1 flex-1 items-center justify-center">
-          <Link href="/" className="items-center">
+    <nav className="justify-center text-[32px] leading-[40px] items-center px-8 py-5 border-b border-nav-border">
+      <ul
+        className={`lg:grid grid-flow-col-dense grid-cols-${
+          NavLinks.length + 1
+        } lg:grid-rows-1`}
+      >
+        <li
+          className={`col-start-${
+            NavLinks.length / 2 + 1
+          } flex flex-1 justify-center items-center`}
+        >
+          <Link href="/">
             <Image
               src="/logo.jpeg"
               alt="Учебный центр"
@@ -16,10 +24,10 @@ export const Navbar = () => {
             />
           </Link>
         </li>
-        {NavLinks.map((link, index) => (
+        {NavLinks.map((link) => (
           <li
             key={link.key}
-            className={`flex items-center justify-center min-w-[18%] order-${index}`}
+            className={`col-start-${link.order} flex items-center justify-center min-w-[18%]`}
           >
             <Link href={link.href}>{link.text}</Link>
           </li>
