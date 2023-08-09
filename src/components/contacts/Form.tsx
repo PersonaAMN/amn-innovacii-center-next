@@ -28,7 +28,7 @@ const FeedbackForm = () => {
         state={form.email}
         setState={(value) => handleStateChange("email", value)}
       />
-      <CustomButton title="send" type="submit" isSubmitting={true} />
+      <CustomButton title="Отправить" type="submit" isSubmitting={false} />
     </form>
   );
 };
