@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      listStyleImage: {
+        checkmark: 'url("/check-mark.svg")',
+      },
       colors: {
         "nav-border": "#EBEAEA",
         "light-white": "#FAFAFB",

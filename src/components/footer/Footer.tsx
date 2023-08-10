@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="flex flex-col items-center justify-center w-screen lg:flex-row gap-5">
       <Link href="/">
-        <Image src="/logo.jpeg" alt="Учебный центр" width={162} height={162} />
+        <Image src="/logo.png" alt="Учебный центр" width={162} height={162} />
       </Link>
       <div>
         <p>г. Екатеринбург</p>

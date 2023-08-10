@@ -1,10 +1,10 @@
 import { Navbar } from "@/components/navbar/Navbar";
 import "./globals.css";
 import type { Metadata } from "next";
-import { IBM_Plex_Mono } from "next/font/google";
+import { Roboto } from "next/font/google";
 import Footer from "@/components/footer/Footer";
 
-const ibmFont = IBM_Plex_Mono({ subsets: ["latin"], weight: "500" });
+const Font = Roboto({ subsets: ["latin"], weight: "500" });
 
 export const metadata: Metadata = {
   title: "Учебный центр",
@@ -18,7 +18,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={ibmFont.className}>
+      <body
+        className={`${Font.className} bg-gradient-to-b from-emerald-50 to-yellow-200`}
+      >
         <Navbar />
         <main>{children}</main>
         <Footer />
