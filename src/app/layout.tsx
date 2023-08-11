@@ -22,7 +22,7 @@ export default function RootLayout({
         className={`${Font.className} bg-gradient-to-b from-emerald-50 to-yellow-200`}
       >
         <Navbar />
-        <main>{children}</main>
+        {children}
         <Footer />
       </body>
     </html>

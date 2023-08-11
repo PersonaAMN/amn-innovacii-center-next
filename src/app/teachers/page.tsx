@@ -1,7 +1,7 @@
-import CardsList from "@/components/catalog/expertCard";
+import ExpertCardsList from "@/components/catalog/ExpertCard";
 
 const Teachers = () => {
-  return <CardsList />;
+  return <ExpertCardsList />;
 };
 
 export default Teachers;

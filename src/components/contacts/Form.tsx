@@ -9,7 +9,9 @@ const FeedbackForm = () => {
     fullName: "",
     email: "",
   });
-  const handleFormSubmit = (e: React.FormEvent) => {};
+  const handleFormSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+  };
   const handleStateChange = (fieldName: string, value: string) => {
     setForm((prevState) => ({ ...prevState, [fieldName]: value }));
   };

@@ -1,10 +1,9 @@
 import Image from "next/image";
 import { ExpertProps } from "@/types/common.types";
 import { experts } from "@/constants";
-import { reverse } from "dns";
 import { twMerge } from "tailwind-merge";
 
-const Card = (props: ExpertProps) => {
+const ExpertCard = (props: ExpertProps) => {
   return (
     <>
       <figure
@@ -34,7 +33,7 @@ const Card = (props: ExpertProps) => {
   );
 };
 
-const CardsList = () => {
+const ExpertCardsList = () => {
   return (
     <article className="flex flex-col justify-center items-center">
       <div className="text-[30px] leading-[40px] text-day-1000 flex justify-center py-50">
@@ -42,11 +41,13 @@ const CardsList = () => {
       </div>
       <div className="px-16">
         {experts.map((expert, index) => {
-          return <Card key={index} {...expert} reversed={index % 2 !== 0} />;
+          return (
+            <ExpertCard key={index} {...expert} reversed={index % 2 !== 0} />
+          );
         })}
       </div>
     </article>
   );
 };
 
-export default CardsList;
+export default ExpertCardsList;
