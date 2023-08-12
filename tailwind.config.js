@@ -8,6 +8,7 @@ module.exports = {
   theme: {
     extend: {
       listStyleImage: {
+        checkcircle: 'url("/check-mark.svg")',
         checkmark: 'url("/check-mark.svg")',
       },
       colors: {

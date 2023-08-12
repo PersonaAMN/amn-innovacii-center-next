@@ -1,7 +1,10 @@
 import {
   EducationalProgrammDescription,
+  PracticumCosmeticDescription,
+  SyllabusAgingSkinDescription,
   SyllabusCosmeticDescription,
   SyllabusDermatologyDescription,
+  SyllabusEmergencyDescription,
 } from "./programmsDescription";
 
 export const NavLinks = [
@@ -72,5 +75,46 @@ export const programms = [
     src: "/pdf/syllabus-basics-of-dermatology.pdf",
     preview: "/pdf/syllabus-basics-of-dermatology.jpg",
     description: <SyllabusDermatologyDescription />,
+  },
+  {
+    fileName: 'Рабочая программа дисциплины "Патоморфология возрастной кожи"',
+    src: "/pdf/syllabus-pathomorphology-of-aging-skin.pdf",
+    preview: "/pdf/syllabus-pathomorphology-of-aging-skin.jpg",
+    description: <SyllabusAgingSkinDescription />,
+  },
+  {
+    fileName: 'Рабочая программа дисциплины "Первая доврачебная помощь"',
+    src: "/pdf/syllabus-emergency-preclinical-care.pdf",
+    preview: "/pdf/syllabus-emergency-preclinical-care.jpg",
+    description: <SyllabusEmergencyDescription />,
+  },
+  {
+    fileName: 'Рабочая программа практики "Косметик"',
+    src: "/pdf/practicum-work-program-cosmetic.pdf",
+    preview: "/pdf/practicum-work-program-cosmetic.jpg",
+    description: <PracticumCosmeticDescription />,
+  },
+];
+
+export const extraMaterials = [
+  {
+    fileName: "Программа итоговой атестации",
+    src: "/pdf/final-assessment-program.pdf",
+    preview: "/pdf/final-assessment-program.jpg",
+  },
+  {
+    fileName: "Учебный план",
+    src: "/pdf/academic-curriculum.pdf",
+    preview: "/pdf/academic-curriculum.jpg",
+  },
+  {
+    fileName: "Календарный учебный график",
+    src: "/pdf/calendar-academic-schedule.pdf",
+    preview: "/pdf/calendar-academic-schedule.jpg",
+  },
+  {
+    fileName: "Медицинская лицензия",
+    src: "/pdf/medical-license.pdf",
+    preview: "/pdf/medical-license.jpg",
   },
 ];
